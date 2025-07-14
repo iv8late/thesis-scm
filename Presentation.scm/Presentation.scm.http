@@ -1,0 +1,6 @@
+@Presentation.scm_HostAddress = http://localhost:5171
+
+GET {{Presentation.scm_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
