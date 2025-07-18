@@ -15,7 +15,7 @@ namespace Utility.scm.Enums
     }
     public enum ErrorCode
     {
-        
+        BadRequest = 400,
         Unauthorized = 401,
         Forbidden = 403,
         ServerError = 500,

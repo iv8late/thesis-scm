@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utility.scm.Enums;
 
-namespace Utility.scm
+namespace Utility.scm.GenericResponse
 {
-    namespace MyProject.Utility
-    {
+    
         public class ApiRsp<T>
         {
             public int Code { get; set; }
@@ -21,16 +21,18 @@ namespace Utility.scm
                 Data = data;
             }
 
-            public static ApiRsp<T> SuccessResponse(int code, T data, string message = "Request has succeeded")
-            {
-                return new ApiRsp<T>(code, message, data);
-            }
 
-            public static ApiRsp<T> ErrorResponse(int code, string message = "Bad request")
+        public static ApiRsp<T> SuccessResponse(SuccessCode? code, string? message, T data = default)
+        {
+            return new ApiRsp<T>((int)(code ?? SuccessCode.OK), message ?? Const.AppMsg.Success.GenericSuccess, data);
+        }
+
+
+        public static ApiRsp<T> ErrorResponse(ErrorCode? code, string? message)
             {
-                return new ApiRsp<T>(code, message);
+                return new ApiRsp<T>((int)(code ?? ErrorCode.BadRequest), message ?? Const.AppMsg.Success.GenericSuccess);
             }
         }
-    }
+    
 }
 

@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DTO.scm\DTO.scm.csproj" />
-    <ProjectReference Include="..\Utility.scm\Utility.scm.csproj" />
+    <ProjectReference Include="..\Models.scm\Models.scm.csproj" />
   </ItemGroup>
 
 </Project>
