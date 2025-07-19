@@ -1,8 +1,23 @@
-# Archivos y carpetas generados por Visual Studio
-.vs/
-bin/
-obj/
-*.user
+# Archivos de usuario de Visual Studio
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
+
+# Carpetas de compilación
+bin/
+obj/
+
+# Archivos temporales y de caché
+*.cache
+*.log
+*.vsp
+*.pdb
+*.v4
+
+# Archivos de ensamblado comunes
+*.dll
+*.exe
+
+# Archivos de VS Code
+.vscode/
