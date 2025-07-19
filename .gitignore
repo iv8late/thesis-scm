@@ -1,23 +1,22 @@
-# Archivos de usuario de Visual Studio
+# Archivos de Visual Studio
+.vs/
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+*.v8.bin
+*.v2
+*.cache
+*.vsidx
 
-# Carpetas de compilación
+# Archivos de compilación de .NET
 bin/
 obj/
-
-# Archivos temporales y de caché
-*.cache
-*.log
-*.vsp
-*.pdb
-*.v4
-
-# Archivos de ensamblado comunes
 *.dll
 *.exe
+*.pdb
+*.db
 
-# Archivos de VS Code
-.vscode/
+# Archivos temporales
+*.log
+*.tmp
