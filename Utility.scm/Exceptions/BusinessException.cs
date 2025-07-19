@@ -26,4 +26,15 @@ namespace Utility.scm.Exceptions
     }
 
 
+    public class ControllerException : Exception
+    {
+        public int Code { get;}
+
+        public ControllerException(int code) : base(CodeResponses.Test[code])
+        {
+            Code = code;
+        } 
+    }
+        
+
 }

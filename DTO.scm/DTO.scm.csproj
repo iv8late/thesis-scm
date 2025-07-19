@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DTO.scm\DTO.scm.csproj" />
-    <ProjectReference Include="..\Utility.scm\Utility.scm.csproj" />
-  </ItemGroup>
-
 </Project>

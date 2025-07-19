@@ -21,6 +21,12 @@ namespace Utility.scm.Dictionary
              { SuccessCode.OK, "Request was successful." },
             { SuccessCode.Created, "Created successfully." }
          };
+
+        public static readonly Dictionary<int, string> Test = new()
+        {
+             { 200, "Request was successful." },
+            { 201, "Created successfully." }
+         };
     }
 
    

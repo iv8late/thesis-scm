@@ -12,11 +12,12 @@ namespace Utility.scm.Const
         {
             public const string UserNotFound = "The user was not found.";
             public const string UnauthorizedAccess = "You do not have permission to access this resource.";
-            public const string GenericServerError = "An unexpected error occurred.";
+            public const string GenericError = "An unexpected error occurred.";
         }
 
         public static class Success
         {
+            public const string GenericSuccess = "Completed with success";
             public const string UserCreated = "User successfully created.";
             public const string OperationCompleted = "Operation completed successfully.";
         }
