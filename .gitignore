@@ -20,3 +20,17 @@ obj/
 # Archivos temporales
 *.log
 *.tmp
+# Archivos de configuración local
+*.csproj.user
+
+# Cache de NuGet
+project.assets.json
+project.nuget.cache
+*.nuget.g.props
+*.nuget.g.targets
+
+# Dotnet tools
+.config/
+
+# Static web assets de Blazor o Razor
+**/staticwebassets/
