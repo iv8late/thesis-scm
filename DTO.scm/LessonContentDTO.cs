@@ -10,10 +10,12 @@ namespace DTO.scm
     {
         public int Id { get; set; }
 
+        public int? typeId { get; set; }
+
         public int? LessonId { get; set; }
 
         public string? Content { get; set; }
 
-        public virtual LessonDTO? Lesson { get; set; }
+        
     }
 }

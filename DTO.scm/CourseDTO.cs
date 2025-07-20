@@ -14,8 +14,11 @@ namespace DTO.scm
         public int? StageId { get; set; }
 
         public int? ThemeId { get; set; }
+        public string? Title { get; set; }
 
         public string? Description { get; set; }
+
+        public List<LessonDTO> lessons { get; set; } = [];
 
 
 

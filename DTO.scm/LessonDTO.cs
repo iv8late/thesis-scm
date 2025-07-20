@@ -11,12 +11,15 @@ namespace DTO.scm
     {
 
         public int Id { get; set; }
-
-        public int? LevelId { get; set; }
-
-        public int? TypeId { get; set; }
-
+        public int? CourseID { get; set; }
+        public int? Order { get; set; }
+        public string? Title { get; set; }
         public string? Description { get; set; }
+        public int? StageId { get; set; }
+        public int? Status { get; set; }
+
+        public List<LessonContentDTO> lessonContents = [];
+
 
     }
 }

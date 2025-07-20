@@ -22,7 +22,7 @@ namespace Utility.scm.GenericResponse
             }
 
 
-        public static ApiRsp<T> SuccessResponse(SuccessCode? code, string? message, T data = default)
+        public static ApiRsp<T> SuccessResponse(SuccessCode? code = SuccessCode.OK, string? message = Const.AppMsg.Success.GenericSuccess, T data = default)
         {
             return new ApiRsp<T>((int)(code ?? SuccessCode.OK), message ?? Const.AppMsg.Success.GenericSuccess, data);
         }

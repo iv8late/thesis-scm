@@ -4,18 +4,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utility.scm.Exceptions;
 using Utility.scm.GenericResponse;
 using Utility.scm.Interfaces;
 
 namespace Business.scm.Courses
 {
-    public class CourseService (IGenericRepository<ThemeDTO> genericRepository): ICourseService
+    public class CourseService: ICourseService
     {
 
         private readonly IGenericRepository<ThemeDTO> _genericRepository;
-        public Task<ApiRsp<List<ThemeDTO>>> GetListThemes()
+       
+
+        public CourseService(IGenericRepository<ThemeDTO> genericRepository)
         {
-            var rsp= ApiRsp<List<ThemeDTO>>.SuccessResponse();
+            _genericRepository = genericRepository;
+        }
+
+        public async Task<ApiRsp<IEnumerable<ThemeDTO>>> GetListThemes()
+        {
+            var rsp = ApiRsp<IEnumerable<ThemeDTO>>.SuccessResponse();
+
+            try
+            {
+                rsp.Data = await _genericRepository.GetAll();
+                return rsp;
+            }
+            catch (BusinessException )
+            {
+
+                return rsp;
+            }
+           
 
         }
     }

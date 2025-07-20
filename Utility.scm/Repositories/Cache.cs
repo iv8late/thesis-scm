@@ -81,6 +81,15 @@ namespace Utility.scm.Repositories
                 throw new Exception("El item no tiene una propiedad 'Id'.");
             }
         }
+
+        public void SetData(IEnumerable<T> items)
+        {
+            if (items == null) return;
+
+            _items.Clear();
+            _items.AddRange(items);
+        }
+
     }
 
 

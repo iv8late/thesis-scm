@@ -11,6 +11,6 @@ namespace Business.scm.Courses
     public interface ICourseService
     {
 
-        Task<ApiRsp<List<ThemeDTO>>> GetListThemes();
+        Task<ApiRsp<IEnumerable<ThemeDTO>>> GetListThemes();
     }
 }
