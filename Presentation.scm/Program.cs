@@ -1,4 +1,5 @@
 using Business.scm.Courses;
+using Business.scm.LessonContent;
 using DTO.scm;
 using Mapping.scm;
 using Utility.scm;
@@ -17,6 +18,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton(typeof(Cache<>));
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<ICourseService, CourseService>();
+builder.Services.AddScoped<ILessonContentService, LessonContentService>();
 
 var app = builder.Build();
 

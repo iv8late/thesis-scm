@@ -18,7 +18,7 @@ namespace DTO.scm
 
         public string? Description { get; set; }
 
-        public List<LessonDTO> lessons { get; set; } = [];
+        public List<LessonDTO> Lessons { get; set; } = [];
 
 
 

@@ -21,6 +21,8 @@ namespace Business.scm.Courses
             _genericRepository = genericRepository;
         }
 
+        
+
         public async Task<ApiRsp<IEnumerable<ThemeDTO>>> GetListThemes()
         {
             var rsp = ApiRsp<IEnumerable<ThemeDTO>>.SuccessResponse();
@@ -28,6 +30,7 @@ namespace Business.scm.Courses
             try
             {
                 rsp.Data = await _genericRepository.GetAll();
+              
                 return rsp;
             }
             catch (BusinessException )

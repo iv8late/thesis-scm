@@ -6,13 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Utility.scm.GenericResponse;
 
-namespace Business.scm.Courses
+namespace Business.scm.LessonContent
 {
-    public interface ICourseService
+    public interface ILessonContentService
     {
-
-        Task<ApiRsp<IEnumerable<ThemeDTO>>> GetListThemes();
-
-        
+        Task<ApiRsp<IEnumerable<LessonDTO>>> GetListLessonContent(int id);
     }
 }

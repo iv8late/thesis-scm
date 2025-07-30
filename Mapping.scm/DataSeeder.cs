@@ -18,7 +18,7 @@ namespace Mapping.scm
                 new ThemeDTO
                 {
                     Id = 1,
-                    Title = "Angular",
+                    Title = "Angularr",
                     Description = "Description Angular, TypeScript...",
                     Courses = new List<CourseDTO>
                     {
@@ -38,11 +38,11 @@ namespace Mapping.scm
                                     Description = "Form",
                                     Order = 1,
                                     StageId = 1,
-                                    lessonContents = new List<LessonContentDTO>
+                                    LessonContents = new List<LessonContentDTO>
                                     {
-                                        new LessonContentDTO { Id = 10001, LessonId = 1001, typeId = 1, Content = "Content 1" },
-                                        new LessonContentDTO { Id = 10002, LessonId = 1001, typeId = 2, Content = "Content 2" },
-                                        new LessonContentDTO { Id = 10003, LessonId = 1001, typeId = 3, Content = "Content 3" },
+                                        new LessonContentDTO { Id = 10001, LessonId = 1001, typeId = 1, Order = 1, Content = "Content 1" }, 
+                                        new LessonContentDTO { Id = 10002, LessonId = 1001, typeId = 2, Order = 2, Content = "Content 2" },// code snippet
+                                        new LessonContentDTO { Id = 10003, LessonId = 1001, typeId = 3 ,Order = 3, Content = "Content 3" },
                                     }
                                 },
                                 new LessonDTO
@@ -52,11 +52,11 @@ namespace Mapping.scm
                                     Description = "CSS",
                                     Order = 2,
                                     StageId = 1,
-                                    lessonContents = new List<LessonContentDTO>
+                                    LessonContents = new List<LessonContentDTO>
                                     {
-                                        new LessonContentDTO { Id = 10004, LessonId = 1002, typeId = 1, Content = "Content 1" },
-                                        new LessonContentDTO { Id = 10005, LessonId = 1002, typeId = 2, Content = "Content 2" },
-                                        new LessonContentDTO { Id = 10006, LessonId = 1002, typeId = 3, Content = "Content 3" },
+                                        new LessonContentDTO { Id = 10004, LessonId = 1002, typeId = 1 , Order = 1, Content = "Content 1" },
+                                        new LessonContentDTO { Id = 10005, LessonId = 1002, typeId = 2, Order = 2, Content = "Content 2" },
+                                        new LessonContentDTO { Id = 10006, LessonId = 1002, typeId = 3, Order = 3, Content = "Content 3" },
                                     }
                                 },
                                 new LessonDTO
@@ -66,11 +66,11 @@ namespace Mapping.scm
                                     Description = "HTML",
                                     Order = 3,
                                     StageId = 1,
-                                    lessonContents = new List<LessonContentDTO>
+                                    LessonContents          = new List<LessonContentDTO>
                                     {
-                                        new LessonContentDTO { Id = 10007, LessonId = 1003, typeId = 1, Content = "Content 1" },
-                                        new LessonContentDTO { Id = 10008, LessonId = 1003, typeId = 2, Content = "Content 2" },
-                                        new LessonContentDTO { Id = 10009, LessonId = 1003, typeId = 3, Content = "Content 3" },
+                                        new LessonContentDTO { Id = 10007, LessonId = 1003, typeId = 1, Order = 1, Content = "Content 1" },
+                                        new LessonContentDTO { Id = 10008, LessonId = 1003, typeId = 2, Order = 2, Content = "Content 2" },
+                                        new LessonContentDTO { Id = 10009, LessonId = 1003, typeId = 3, Order = 3, Content = "Content 3" },
                                     }
                                 }
                             }
@@ -91,11 +91,11 @@ namespace Mapping.scm
                                     Description = "How to use HttpClient",
                                     Order = 1,
                                     StageId = 1,
-                                    lessonContents = new List<LessonContentDTO>
+                                    LessonContents = new List<LessonContentDTO>
                                     {
-                                        new LessonContentDTO { Id = 10010, LessonId = 1004, typeId = 1, Content = "Content 1" },
-                                        new LessonContentDTO { Id = 10011, LessonId = 1004, typeId = 2, Content = "Content 2" },
-                                        new LessonContentDTO { Id = 10012, LessonId = 1004, typeId = 3, Content = "Content 3" },
+                                        new LessonContentDTO { Id = 10010, LessonId = 1004, typeId = 1, Order = 1, Content = "Content 1" },
+                                        new LessonContentDTO { Id = 10011, LessonId = 1004, typeId = 2, Order = 2, Content = "Content 2" },
+                                        new LessonContentDTO { Id = 10012, LessonId = 1004, typeId = 3, Order = 3, Content = "Content 3" },
                                     }
                                 }
                             }
@@ -126,11 +126,11 @@ namespace Mapping.scm
                                     Description = "How to stage",
                                     Order = 1,
                                     StageId = 1,
-                                    lessonContents = new List<LessonContentDTO>
+                                    LessonContents = new List<LessonContentDTO>
                                     {
-                                        new LessonContentDTO { Id = 20001, LessonId = 2001, typeId = 1, Content = "Content 1" },
-                                        new LessonContentDTO { Id = 20002, LessonId = 2001, typeId = 2, Content = "Content 2" },
-                                        new LessonContentDTO { Id = 20003, LessonId = 2001, typeId = 3, Content = "Content 3" },
+                                        new LessonContentDTO { Id = 20001, LessonId = 2001, typeId = 1, Order = 1, Content = "Content 1" },
+                                        new LessonContentDTO { Id = 20002, LessonId = 2001, typeId = 2, Order = 2, Content = "Content 2" },
+                                        new LessonContentDTO { Id = 20003, LessonId = 2001, typeId = 3, Order = 3, Content = "Content 3" },
                                     }
                                 },
                                 new LessonDTO
@@ -140,11 +140,11 @@ namespace Mapping.scm
                                     Description = "How to push changes",
                                     Order = 2,
                                     StageId = 1,
-                                    lessonContents = new List<LessonContentDTO>
+                                    LessonContents = new List<LessonContentDTO>
                                     {
-                                        new LessonContentDTO { Id = 20004, LessonId = 2002, typeId = 1, Content = "Content 1" },
-                                        new LessonContentDTO { Id = 20005, LessonId = 2002, typeId = 2, Content = "Content 2" },
-                                        new LessonContentDTO { Id = 20006, LessonId = 2002, typeId = 3, Content = "Content 3" },
+                                        new LessonContentDTO { Id = 20004, LessonId = 2002, typeId = 1, Order = 1,Content = "Content 1" },
+                                        new LessonContentDTO { Id = 20005, LessonId = 2002, typeId = 2, Order = 2, Content = "Content 2" },
+                                        new LessonContentDTO { Id = 20006, LessonId = 2002, typeId = 3, Order = 3, Content = "Content 3" },
                                     }
                                 },
                                 new LessonDTO
@@ -154,11 +154,11 @@ namespace Mapping.scm
                                     Description = "How to pull changes",
                                     Order = 3,
                                     StageId = 1,
-                                    lessonContents = new List<LessonContentDTO>
+                                    LessonContents = new List<LessonContentDTO>
                                     {
-                                        new LessonContentDTO { Id = 20007, LessonId = 2003, typeId = 1, Content = "Content 1" },
-                                        new LessonContentDTO { Id = 20008, LessonId = 2003, typeId = 2, Content = "Content 2" },
-                                        new LessonContentDTO { Id = 20009, LessonId = 2003, typeId = 3, Content = "Content 3" },
+                                        new LessonContentDTO { Id = 20007, LessonId = 2003, typeId = 1, Order = 1, Content = "Content 1" },
+                                        new LessonContentDTO { Id = 20008, LessonId = 2003, typeId = 2, Order = 2, Content = "Content 2" },
+                                        new LessonContentDTO { Id = 20009, LessonId = 2003, typeId = 3, Order = 3, Content = "Content 3" },
                                     }
                                 }
                             }

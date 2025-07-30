@@ -12,6 +12,8 @@ namespace DTO.scm
 
         public int? typeId { get; set; }
 
+        public int? Order { get; set; }
+
         public int? LessonId { get; set; }
 
         public string? Content { get; set; }

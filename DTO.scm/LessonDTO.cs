@@ -18,7 +18,7 @@ namespace DTO.scm
         public int? StageId { get; set; }
         public int? Status { get; set; }
 
-        public List<LessonContentDTO> lessonContents = [];
+        public List<LessonContentDTO> LessonContents = [];
 
 
     }
