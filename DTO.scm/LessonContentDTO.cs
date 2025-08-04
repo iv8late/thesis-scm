@@ -10,7 +10,7 @@ namespace DTO.scm
     {
         public int Id { get; set; }
 
-        public int? typeId { get; set; }
+        public int? TypeId { get; set; }
 
         public int? Order { get; set; }
 
