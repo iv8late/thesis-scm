@@ -17,7 +17,8 @@ namespace DTO.scm
         public int? LessonId { get; set; }
 
         public string? Content { get; set; }
+        public bool? Completed { get; set; } = false;
 
-        
+
     }
 }
